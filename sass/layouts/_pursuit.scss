@@ -2,6 +2,10 @@
   padding-top: 0px;
   padding-bottom: 94px;
   background: var(--first-section-color);
+
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 }
 .occupation {
   display: flex;

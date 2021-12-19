@@ -730,6 +730,12 @@ img {
   background: var(--first-section-color);
 }
 
+@media screen and (max-width: 1200px) {
+  .pursuit {
+    display: none;
+  }
+}
+
 .occupation {
   display: -webkit-box;
   display: -ms-flexbox;
