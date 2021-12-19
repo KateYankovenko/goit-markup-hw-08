@@ -1,0 +1,31 @@
+.clients__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0px;
+  margin-bottom: 0px;
+}
+.clients__link {
+  display: block;
+  align-items: center;
+}
+.clients__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  color: var(--svg-fill-color);
+  border: 1px solid var(--svg-fill-color);
+  border-radius: 4px;
+  padding: 0px;
+  margin: 0px;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
+.clients__button-icon {
+  fill: currentColor;
+}

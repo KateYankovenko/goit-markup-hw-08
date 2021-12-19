@@ -1,0 +1,35 @@
+@import "./utils/variables";
+@import "./base/normalize";
+
+@import "./components/basic-styles-reset";
+@import "./components/container";
+@import "./utils/visually-hidden";
+@import "./base/common";
+
+@import "./components/logo";
+@import "./base/page-navigation";
+@import "./components/contacts";
+
+@import "./layouts/hero";
+@import "./components/button";
+@import "./components/filter-buttons";
+
+@import "./layouts/section";
+
+@import "./components/section-hdr";
+@import "./components/section-title";
+
+@import "./layouts/pursuit";
+
+@import "./layouts/preferences";
+
+@import "./layouts/studio-team";
+
+@import "./layouts/clients";
+
+@import "./layouts/project-card-grid";
+
+@import "./layouts/modal-vindow";
+
+@import "./layouts/footer";
+@import "./components/subscribe-footer-form";

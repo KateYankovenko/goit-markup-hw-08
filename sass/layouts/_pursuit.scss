@@ -1,0 +1,33 @@
+.pursuit {
+  padding-top: 0px;
+  padding-bottom: 94px;
+  background: var(--first-section-color);
+}
+.occupation {
+  display: flex;
+}
+.occupation__item {
+  position: relative;
+  align-items: center;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.occupation__img {
+  display: block;
+}
+.occupation__card-inscript {
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  top: 224px;
+  background: rgba(47, 48, 58, 0.8);
+}
+.occupation__inscription {
+  display: block;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  color: var(--section-text-color);
+}

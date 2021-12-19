@@ -1,0 +1,30 @@
+.list {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.header {
+  border-bottom: 1px solid var(--header-brd-line-color);
+  background-color: var(--first-section-color);
+}
+
+.link {
+  position: relative;
+
+  transition-property: color;
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    text-decoration: none;
+  }
+}
+.image {
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-decoration: none;
+}

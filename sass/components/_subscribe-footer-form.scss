@@ -1,0 +1,40 @@
+.subscribe {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 93px;
+  margin-right: 0;
+}
+.subscribe__subscription {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.subscribe__subform-text {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: var(--section-text-color);
+}
+.subscribe__form {
+  display: inline-block;
+  width: 358px;
+  min-height: 50px;
+  margin-right: 12px;
+  padding: 15px 16px;
+  border-radius: 4px;
+  outline-style: none;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
+}
+.sign__button {
+  display: flex;
+  align-items: flex-end;
+}
+.sign__icon-letter {
+  margin-left: 10px;
+}
+.sign__footer-submit-button {
+  display: inline-flex;
+  align-items: center;
+}
