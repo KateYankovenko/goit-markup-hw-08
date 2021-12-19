@@ -1,6 +1,8 @@
 @import "./utils/variables";
 @import "./base/normalize";
 
+@import "./utils/breakpoints";
+
 @import "./components/basic-styles-reset";
 @import "./components/container";
 @import "./utils/visually-hidden";
