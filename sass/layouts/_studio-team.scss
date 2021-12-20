@@ -2,10 +2,6 @@
   background: var(--second-section-color);
   text-align: center;
 }
-.cmd {
-  margin-top: 0px;
-  margin-bottom: 50px;
-}
 .band__members {
   // display: flex;
   // & .band-members__card + .band-members__card {
@@ -22,7 +18,9 @@
 .band-members__card {
   max-width: 450px;
   min-height: 368px;
-  margin: 0 auto;
+  // margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -41,14 +39,15 @@
   }
 
   @media screen and (min-width: 768px) {
-    flex-basis: calc(100% / 2 - 30px);
+    width: calc(100% / 2 - 30px);
     margin: 15px;
   }
 
   @media screen and (min-width: 1200px) {
-    flex-basis: calc(100% / 4 - 30px);
+    width: calc(100% / 4 - 30px);
   }
 }
+
 .team {
   padding-top: 30px;
   padding-bottom: 24px;
