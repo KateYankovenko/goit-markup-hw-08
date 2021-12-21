@@ -1476,6 +1476,7 @@ img {
 
 .footer__thumb {
   text-align: center;
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1487,6 +1488,17 @@ img {
         -ms-flex-align: baseline;
             align-items: baseline;
     text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .footer__thumb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
