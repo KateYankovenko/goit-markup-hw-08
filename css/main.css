@@ -665,14 +665,36 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-top: 0px;
-  margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
-  width: 611px;
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .filter {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filter {
+    margin-bottom: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
+  }
 }
 
 .filter__button {
@@ -690,12 +712,17 @@ img {
   border-radius: 4px;
   cursor: pointer;
   border: none;
+  margin: 8px;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: var(--animation-duration);
           transition-duration: var(--animation-duration);
   -webkit-transition-timing-function: var(--animation-function);
           transition-timing-function: var(--animation-function);
+}
+
+.filter__button:not(:last-child) {
+  margin-right: 0;
 }
 
 .filter__button first {
