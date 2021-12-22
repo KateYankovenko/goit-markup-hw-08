@@ -1,36 +1,21 @@
 .subscribe {
-  // display: flex;
-  // align-items: flex-end;
-  // margin-left: 93px;
-  // margin-right: 0;
   text-align: center;
   margin-bottom: 60px;
 
   @media screen and (min-width: 1200px) {
     margin-bottom: 0;
     margin-left: 93px;
+    min-width: 582px;
     text-align: start;
+    justify-content: space-between;
     // display: flex;
-    // align-items: flex-end;
-    // margin-left: 93px;
-    // margin-right: 0;
+    align-items: flex-end;
   }
-
-  // @media screen and (min-width: $pc-width) {
-
-  // }
 }
 .subscribe__subscription {
-  // display: flex;
-  // // justify-content: space-between;
-  // align-items: center;
-  // @media screen and (min-width: 1200px) {
-  //   display: flex;
-  //   // align-items: flex-end;
-  // }
-
   @media screen and (min-width: 1200px) {
     display: flex;
+    justify-content: space-between;
   }
 }
 .subscribe__subform-text {
@@ -43,7 +28,7 @@
   display: inline-block;
   width: 358px;
   min-height: 50px;
-  // margin-right: 12px;
+  margin-right: 12px;
   margin-bottom: 20px;
   padding: 15px 16px;
   border-radius: 4px;
@@ -53,14 +38,12 @@
   color: rgba(255, 255, 255, 0.3);
 }
 .sign__button {
-  display: flex;
-  margin: 0 auto;
-  // align-items: flex-end;
-  width: 200px;
-  @media screen and (min-width: 1200px) {
-    // display: flex;
-    align-items: flex-end;
-    margin-left: 12px;
+  text-align: end;
+  margin-top: -70px;
+
+  @media screen and (max-width: 1200px) {
+    text-align: center;
+    margin: 0 auto;
   }
 }
 .sign__icon-letter {
