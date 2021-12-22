@@ -346,6 +346,7 @@ img {
 }
 
 .header {
+  position: relative;
   border-bottom: 1px solid var(--header-brd-line-color);
   background-color: var(--first-section-color);
 }
@@ -534,6 +535,40 @@ ul {
 
 .site-nav__contacts-page:hover::after {
   opacity: 1;
+}
+
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.js-open-menu .icon-cross {
+  display: block;
+}
+
+.menu-button.js-open-menu .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  display: none;
+  height: 796px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: var(--section-text-color);
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
 }
 
 .contact {

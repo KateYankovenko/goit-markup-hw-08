@@ -15,11 +15,22 @@
 
   <body>
     <!--Шапка страницы-->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container main-nav">
         <a href="./index.html" class="logo"
           >Web<span class="logo__accent">Studio</span></a
         >
+
+     <!--Top modal mobile button---------------->
+          <button type="button" class="menu-button is-open" aria-expended="false" aria-controls="menu-container"
+           data-menu-button>
+            <svg aria-label="This is mobile menu switcher" width="40" height="40">
+              <use class="icon-cross" href="./images/icons.svg#icon-vector"></use>
+              <use class="icon-menu" href="./images/icons.svg#icon-menu_icon"></use>
+            </svg>
+          </button>
+          <div class="menu-container is-open" id="menu-container" data-menu>Mobile menu</div>
+
         <nav>
           <ul class="site-nav list">
             <li class="site-nav__list-item">
@@ -39,6 +50,8 @@
             </li>
           </ul>
         </nav>
+    
+        <!--Header contacts-------------------------->
         <ul class="contact">
           <li class="contact__item">
             <a href="mailto:info@devstudio.com" class="contact__header link"
@@ -56,7 +69,7 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header> 
 
     <!--Страница портфолио-->
     <main>
@@ -383,12 +396,12 @@
         </div> 
       </div>
     </footer>
-    <script
+    <!-- <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
-    ></script>
-    <script defer src="js/mobile-menu.js"></script>
+    ></script> -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
