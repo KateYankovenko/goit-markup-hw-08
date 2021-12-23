@@ -8,6 +8,11 @@
   position: relative;
   border-bottom: 1px solid var(--header-brd-line-color);
   background-color: var(--first-section-color);
+  // @media (max-width: 768px) {
+  //   // display: flex;
+  //   // justify-content: space-between;
+  //   height: 60px;
+  // }
 }
 
 .link {
@@ -39,3 +44,6 @@ ul {
   margin: 0;
   padding: 0;
 }
+// body.modal-open {
+//   overflow: hidden;
+// }
