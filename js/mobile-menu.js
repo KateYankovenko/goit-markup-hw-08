@@ -29,16 +29,16 @@
 })();
 
 // (() => {
-//   const menuBtnRef = document.querySelector("[data-menu-button]");
-//   // const mobileMenuRef = document.querySelector("[data-menu]");
+//   const refs = {
+//     openMenuBtn: document.querySelector('.menu-button-open'),
+//     closeMenuBtn: document.querySelector('.menu-button-close'),
+//     menu: document.querySelector('.menu-container'),
+//   };
 
-//   menuBtnRef.addEvenetListener("click", () => {
-//     const expanded =
-//       menuBtnRef.getAttribute("aria-expanded") == "true" || false;
-    
-//     menuBtnRef.classList.toggle('is-open');
-//     menuBtnRef.setAttribute('aria-expanded', !expanded);
+//   refs.openMenuBtn.addEventListener('click', toggleMenu);
+//   refs.closeMenuBtn.addEventListener('click', toggleMenu);
 
-//     menuBtnRef.classList.toggle('is-open');
-//   });
-// }) ();
+//   function toggleMenu() {
+//     refs.menu.classList.toggle('is-hidden');
+//   }
+// })();
