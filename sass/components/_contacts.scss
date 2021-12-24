@@ -7,7 +7,12 @@
     flex-direction: column;
     align-items: flex-start;
     margin-left: 25px;
+    margin-bottom: 64px;
     justify-content: space-between;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
 .contact__header-icon {
@@ -32,7 +37,7 @@
 }
 .contact__header {
   display: flex;
-  padding: 32px 0;
+  padding: 32px 0 0 0;
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -49,6 +54,14 @@
     line-height: 1.18;
     letter-spacing: 0.02em;
     // margin-left: 0;
+  }
+}
+.mail {
+  @media screen and (min-width: 420px) and (max-width: 768px) {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
   }
 }
 // .contact__item:not(:first-child) {
