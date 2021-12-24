@@ -1619,8 +1619,7 @@ ul {
 .modal {
   position: absolute;
   padding: 40px;
-  min-width: 528px;
-  min-height: 581px;
+  text-align: center;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -1631,13 +1630,23 @@ ul {
   border-radius: 4px;
 }
 
+@media screen and (max-width: 450px) {
+  .modal {
+    width: 100vw;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .modal {
-    position: absolute;
-    top: 50%;
-    bottom: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    width: 450px;
+    height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
   }
 }
 
@@ -1667,14 +1676,11 @@ ul {
 }
 
 .modal__title {
-  display: block;
-  width: 448px;
-  height: 23px;
   margin-top: 0;
   margin-bottom: 12px;
-  font-size: 20px;
   font-weight: 700;
-  line-height: 1.15;
+  font-size: 20px;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
@@ -1789,9 +1795,9 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1805,9 +1811,8 @@ ul {
 }
 
 .modal-form__checkbox label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
+  text-align: left;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1818,7 +1823,7 @@ ul {
 }
 
 .modal-form__check-text {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }

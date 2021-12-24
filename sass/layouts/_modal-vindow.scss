@@ -18,8 +18,9 @@
 .modal {
   position: absolute;
   padding: 40px;
-  min-width: 528px;
-  min-height: 581px;
+
+  text-align: center;
+
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -28,17 +29,17 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
+  @media screen and (max-width: 450px) {
+    width: 100vw;
+  }
+
   @media screen and (min-width: 480px) {
-    position: absolute;
-    // top: 93px;
-    // bottom: 93px;
-    // left: 15px;
-    // right: 15px;
-    // width: 450px;
-    // height: 609px;
-    top: 50%;
-    bottom: 50%;
-    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 609px;
+  }
+  @media screen and (min-width: 1200px) {
+    min-width: 528px;
+    min-height: 581px;
   }
 }
 .modal__button {
@@ -60,14 +61,11 @@
   }
 }
 .modal__title {
-  display: block;
-  width: 448px;
-  height: 23px;
   margin-top: 0;
   margin-bottom: 12px;
-  font-size: 20px;
   font-weight: 700;
-  line-height: 1.15;
+  font-size: 20px;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
@@ -154,7 +152,7 @@
 }
 .modal-form__checkbox {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   margin-top: 20px;
@@ -164,14 +162,15 @@
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   label {
-    display: flex;
+    display: block;
+    text-align: left;
     align-items: center;
     justify-content: center;
     margin: 0;
   }
 }
 .modal-form__check-text {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
