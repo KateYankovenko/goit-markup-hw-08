@@ -1532,6 +1532,7 @@ img {
 }
 
 .portfolio-grid__project {
+  height: auto;
   background-color: var(--section-text-color);
 }
 
@@ -1563,6 +1564,11 @@ img {
 .portfolio-grid__working-card {
   position: relative;
   overflow: hidden;
+}
+
+.portfolio-grid__working-card img {
+  height: 100%;
+  width: 100%;
 }
 
 .portfolio-grid__working-project {
