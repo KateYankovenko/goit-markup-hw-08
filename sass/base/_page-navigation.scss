@@ -133,8 +133,8 @@
     opacity: 1;
   }
 }
-.menu-button-open,
-.menu-button-close {
+.menu__button-open,
+.menu__button-close {
   min-height: 40px;
   min-width: 40px;
   display: -webkit-box;
@@ -151,28 +151,28 @@
   outline: none;
   transition: color var(--animation-duration) var(--animation-function);
 }
-.menu-button-close {
+.menu__button-close {
   border-radius: 50%;
   position: absolute;
   top: 10px;
   right: 15px;
 }
 @media screen and (min-width: 768px) {
-  .menu-button-open {
+  .menu__button-open {
     display: none;
   }
 }
 @media screen and (min-width: 768px) {
-  .menu-button-close {
+  .menu__button-close {
     display: none;
   }
 }
-.menu-button-open:hover,
-.menu-button-open:focus {
+.menu__button-open:hover,
+.menu__button-open:focus {
   color: var(--accent-color);
 }
-.menu-button-close:hover,
-.menu-button-close:focus {
+.menu__button-close:hover,
+.menu__button-close:focus {
   color: var(--accent-color);
 }
 .icon-menu-open,
@@ -184,7 +184,7 @@
 }
 
 // positioning to .header on the _common.scss
-.menu-container {
+.menu__container {
   @media screen and (max-width: 768px) {
     transform: translateX(100%);
     transition: transform var(--animation-duration) var(--animation-function);
@@ -205,7 +205,7 @@
   }
 }
 
-.menu-container.is-open {
+.menu__container.is-open {
   transform: translateX(0);
 }
 
@@ -238,7 +238,7 @@
     margin-right: 314px;
   }
 }
-.menu-thumb {
+.menu__thumb {
   display: flex;
   justify-content: space-between;
   @media screen and (min-width: 768px) {
