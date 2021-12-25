@@ -31,14 +31,16 @@
 .portfolio-grid__working-card {
   position: relative;
   overflow: hidden;
+
   img {
     height: 100%;
     width: 100%;
   }
 }
 .portfolio-grid__working-project {
-  display: block;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 
   overflow: hidden;
 
@@ -49,7 +51,6 @@
   }
 }
 .portfolio-grid__project-description {
-  display: block;
   position: absolute;
   left: 0;
   top: 0;
@@ -73,6 +74,7 @@
   transform: translateY(0);
 }
 .portfolio-grid__project-img {
+  flex-grow: 1;
   padding: 20px 24px;
   border-top: none;
   border-left: 1px solid #eeeeee;
