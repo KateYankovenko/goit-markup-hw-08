@@ -5,8 +5,7 @@
   justify-content: space-between;
   @media (max-width: 768px) {
     display: flex;
-    // justify-content: space-between;
-    max-height: 60px;
+    height: 70px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -133,8 +132,8 @@
     opacity: 1;
   }
 }
-.menu__button-open,
-.menu__button-close {
+.menu-button-open,
+.menu-button-close {
   min-height: 40px;
   min-width: 40px;
   display: -webkit-box;
@@ -151,28 +150,28 @@
   outline: none;
   transition: color var(--animation-duration) var(--animation-function);
 }
-.menu__button-close {
+.menu-button-close {
   border-radius: 50%;
   position: absolute;
   top: 10px;
   right: 15px;
 }
 @media screen and (min-width: 768px) {
-  .menu__button-open {
+  .menu-button-open {
     display: none;
   }
 }
 @media screen and (min-width: 768px) {
-  .menu__button-close {
+  .menu-button-close {
     display: none;
   }
 }
-.menu__button-open:hover,
-.menu__button-open:focus {
+.menu-button-open:hover,
+.menu-button-open:focus {
   color: var(--accent-color);
 }
-.menu__button-close:hover,
-.menu__button-close:focus {
+.menu-button-close:hover,
+.menu-button-close:focus {
   color: var(--accent-color);
 }
 .icon-menu-open,
@@ -184,7 +183,7 @@
 }
 
 // positioning to .header on the _common.scss
-.menu__container {
+.menu-container {
   @media screen and (max-width: 768px) {
     transform: translateX(100%);
     transition: transform var(--animation-duration) var(--animation-function);
@@ -198,14 +197,14 @@
     width: 100vw;
     height: 100vh;
     padding: 32px 15px;
-    z-index: 5;
+    z-index: 1;
     background-color: var(--section-text-color);
     box-shadow: 0px 4px 8px #0000000a, 0px 2px 4px rgba(0, 0, 0, 0.08),
       0px 1px 3px rgba(0, 0, 0, 0.16);
   }
 }
 
-.menu__container.is-open {
+.menu-container.is-open {
   transform: translateX(0);
 }
 
@@ -238,7 +237,7 @@
     margin-right: 314px;
   }
 }
-.menu__thumb {
+.menu-thumb {
   display: flex;
   justify-content: space-between;
   @media screen and (min-width: 768px) {
